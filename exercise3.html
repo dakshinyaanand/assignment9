@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .nostyle{
+            background-color:white;
+        }
+        .ib
+        {
+            display: inline-block;
+            
+        }
+ 
+
+        td
+        {
+             padding:0 15px 0 15px;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        tr:nth-child(odd){
+            background-color:#e5e5e5;
+        }
+        td{
+            height:40px;
+        }
+       
+        th{
+            height:40px;
+            background-color:lightgrey;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="ib">
+        <p><b>List of Persons</b></p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>shazah</td>
+                <td>male</td>
+                <td>30</td>
+                <td>lahore</td>
+                <td>update/remove</td>
+            </tr>
+            <tr>
+                <td>danial</td>
+                <td>male</td>
+                <td>32</td>
+                <td>islamabhad</td>
+                <td>update/remove</td>
+            </tr>
+            <tr>
+                <td>sara</td>
+                <td>female</td>
+                <td>34</td>
+                <td>karachi</td>
+                <td>update/remove</td>
+            </tr>
+            <tr>
+                <td>tahir</td>
+                <td>male</td>
+                <td>38</td>
+                <td>lahore</td>
+                <td>update/remove</td>
+            </tr>
+        </table>
+    </div>
+    <div class="ib"><p><b>Add/Update Person Form</b></p>
+       <table >
+           <tr class="nostyle">
+               <td>Name</td>
+               <td colspan="2"><input type="text" /></td>
+           </tr>
+           <tr>
+               <td>Gender</td>
+               <td><input type="radio" value="Male" >Male</td>
+               <td><input type="radio" value="Female" >Female</td>
+           </tr>
+           <tr class="nostyle">
+               <td>Age</td>
+               <td colspan="2"><input type="text" /></td>
+           </tr>
+           <tr>
+               <td>City</td>
+               <td colspan="2">
+                   <select name="city">
+                       <option value="Lahore">Lahore</option>
+                       <option value="Karachi">Karachi</option>
+                       <option value="Islamabad">Islamabad</option>
+                   </select>
+               </td>
+
+           </tr>
+           <tr class="nostyle">
+               <td><button onclick="" value="reset">reset</button></td>
+               <td><button onclick="" value="add">add</button></td>
+               <td><button onclick="" value="update">update</button></td>
+           </tr>
+       </table>
+
+    </div>
+</body>
+</html>
